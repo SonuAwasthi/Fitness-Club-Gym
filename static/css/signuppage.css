@@ -1,0 +1,90 @@
+
+
+.up-textt{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    color:darkgray; 
+    font-size:65px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+form{
+   
+    height: 560px;
+    width: 550px;
+    overflow: hidden;
+    border: 4px solid rgba(128, 128, 128, 0.162);
+    margin-top: 35px;
+    background-image: url("/static/img/black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7%;
+    
+
+}
+
+.f-user{
+    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 24px;
+    
+}
+
+.f-user label{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    
+}
+.f-user input{
+    height: 33px;
+    border: 2px solid rgb(89, 86, 86);
+    border-radius: 25px;
+    background-color: gray;
+    opacity: 0.7;
+    padding-left: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    
+
+}
+
+.botton{
+    margin: auto;
+    width: 50%;
+    margin-top: 28px;
+    height: 33px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.acc-creater a h4 u{
+    position: absolute;
+    bottom: 0;
+    color:aliceblue;
+    
+}
+
+@media screen and (max-width:800px) {
+    .form-container{
+        width: 93%;
+        display: flex;
+        margin-left:12px;
+        justify-content: center;
+    }
+
+}

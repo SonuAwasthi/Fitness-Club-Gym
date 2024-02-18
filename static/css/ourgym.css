@@ -1,0 +1,151 @@
+
+.thoughts{
+    display: flex;
+    margin-top:25px;
+    align-items: center;
+}
+
+.tho-content{
+    padding: 20px;
+    color:black;
+    width: 900px;
+}
+.tho-content span{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    color:  rgb(126, 126, 180);
+}
+
+.tho-content span h1{
+    color: rgb(126, 126, 180);
+    opacity: 0.7;
+    
+}
+
+
+
+
+
+
+.f-club{
+    margin-top: 45px;
+    margin-bottom: 55px;
+}
+
+.fitness-logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+div.visit-text h1{
+    margin-left: 25px;
+    margin-top: 45px;
+}
+
+
+
+
+
+
+.footer{
+    margin: 0;
+    height: 40vh;
+
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width:100%;
+    margin: auto;
+    margin-top: 40px;
+}
+.footer-content{
+    margin-top:30px;
+    color: white;
+}
+.footer-content ul{
+    list-style: none;
+
+
+}
+
+.footer-content ul li{
+    margin-bottom: 10px;
+    line-height: 1.2;
+    margin-left:-20px;
+    
+}
+
+.social-meadia{
+    margin-top: 30px;
+}
+
+.social-meadia h1{
+    color: white;
+}
+
+.fa{
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 38px;
+    background-color:white ;
+    color:black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top:6px;
+    width: 40px;
+    height: 38px;
+    
+    
+    
+
+}
+
+.fa:hover{
+    background-color: black;
+    color: white;
+}
+ 
+a.fa.fa-facebook{
+    font-size: 28px; 
+
+}
+a.fa.fa-instagram{
+    font-size: 28px;
+    
+}
+a.fa.fa-linkedin{
+    font-size: 25px;
+}
+a.fa.fa-google{
+    font-size: 28px;
+} 
+
+
+
+@media screen and (max-width:800px) {
+    .fitness-logo img{
+        width: 330px;
+    }
+    .cards-content .imgs{
+        margin-left: 24px;
+        margin-bottom: 15px;
+    }
+
+    
+
+}

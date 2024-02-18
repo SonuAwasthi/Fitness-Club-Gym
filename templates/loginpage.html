@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}LOGIN{% endblock title %}
+
+{% block body %}
+<title>|Login</title>
+<link rel="stylesheet" href="/static/css/loginus.css">
+
+
+
+<div class="first-content">
+    <h1>LOGIN</h1>
+</div>
+
+
+
+
+<div class="form-contain">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="lohgin">
+            <label for="username">UserName</label>
+            <input type="text" class="user-login" name="username">
+
+            <label for="password">Password</label>
+            <input type="password" class="user-login" name="password">
+
+            <button type="submit" class="submit-user">Submit</button>
+            <a href="/signpage"><h4><u>Create account</u></h4></a>
+        </div>
+    </form>
+    
+</div>
+
+{% endblock body %}

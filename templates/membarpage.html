@@ -1,0 +1,88 @@
+
+{% extends "base.html" %}
+
+{% block title %}Membar{% endblock %}
+
+{% block body %}
+
+
+<link rel="stylesheet" href="/static/css/membar.css">
+
+<div class="intro">
+    <div class="fitness-club">
+        <img src="/static/img/fitness-logo.png">
+    </div>
+</div>
+<hr>
+
+<div class="membership-text">
+    <h4>A Gym Membership gives you access to a variety of top-quality exercise Equipment to enhance your Workout. You can use weight Machines, Dumbbells, Elliptical, and Stairmasters – all you require to kick start your fitness journey. you just have a Membership<br> <br>
+    You can also get personal trainer .Personal training sessions are times set aside for clients to work with a personal trainer either one-on-one or in a small group. The trainer should know your fitness goals and needs and design a program during your sessions aimed at meeting those goals. The trainer will also: Explain and demonstrate the exercises. </h4>
+</div>
+
+
+<div class="pack-estimate">
+    <div class="estimate-contant">
+        <img src="/static/img/Package-Front1.jpg">
+    </div>
+</div>
+
+
+
+
+<div class="membar-form">
+    <form action="/membarpage/" method="post" >
+        {% csrf_token %}
+    
+        <div class="form-container">
+            <h3>Select Your Package</h3>
+            <div class="form-content">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="fullname" >
+            </div>
+
+            <div class="form-content">
+                <label for="num">Number</label>
+                <input type="Phone" id="num" name="number" >
+            </div>
+
+
+            <div class="form-content">
+                <label for="gm">Gmail</label>
+                <input type="gmail" id="gm" name="gmail" >
+            </div>
+        
+        
+            <div class="form-content">
+                <label for="tim">Packages For :</label>
+                <select id="tim" name="packages">
+                    <option value="one_monthe">One Month</option>
+                    <option value="three_monthe">Three Monthe</option>
+                    <option value="six_monthe">Six Month</option>
+                    <option value="twelve_monthe">Twelve Month</option>
+                </select>
+            </div>
+
+        
+            <div class="form-content-redio">
+                <input type="radio" id="one" name="gender" value="male">
+                <label for="one">Male</label>
+                <input type="radio" id="two-Month" name="gender" value="female">
+                <label for="two-Month">Female </label>
+            </div>
+
+            
+                <button type="submit" class="botton">Submit </button>
+            
+        </div>
+    
+    <div class="logg">
+        <a href="/loginpage" class="loggoutt"><strong>Logout<strong></a>
+    </div>
+    </form>
+</div>
+
+
+
+
+{% endblock body %}
