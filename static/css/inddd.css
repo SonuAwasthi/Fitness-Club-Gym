@@ -191,6 +191,7 @@ button.fa.fa-search{
     height: 50%;
     background-size: cover;
     width: 260px;
+    cursor: pointer;
 }
 
 .cards img:hover{
