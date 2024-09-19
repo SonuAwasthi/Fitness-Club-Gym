@@ -1,5 +1,9 @@
 
-
+body{
+    background-image:url("/static/img/bglogin.jpg") ;
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
 
 .first-content{
     display: flex;
@@ -8,6 +12,7 @@
     color:darkgray;
     font-size:55px;
     font-weight: 900;
+    
 
 }
 
@@ -15,6 +20,7 @@
 .form-contain{
     display: flex;
     justify-content: center;
+    /* background-image: url("/static/img/natur2.png"); */
 }
 
 form{

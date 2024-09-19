@@ -57,27 +57,6 @@ button.fa.fa-search{
 
 
 
-@media screen and (max-width:550px){
-    .ind-container{
-        height: 9vh;
-    }
-    .ind-container h1{
-        font-size:15px;
-    }
-    .ser{
-        width: 250px;
-        height: 30px;
-     
-        
-    }
-    .ser input{
-        width: 200px;
-        
-    }
-
-    
-    
-}
 
 
 
@@ -136,15 +115,6 @@ button.fa.fa-search{
     font-weight: bold;
 }
 
-@media screen and (max-width:800px) {
-    .heading{
-        width: 80vw;
-        height: 10vh;
-        
-    } 
-    
-}
-
 
 
 
@@ -155,7 +125,6 @@ button.fa.fa-search{
     overflow: auto;
     white-space: nowrap;
     overflow-y: hidden;
-    float: left;
     margin-top: 115px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -214,4 +183,41 @@ button.fa.fa-search{
     border-radius: 6px;
     padding: 5px;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .heading{
+        width: 80vw;
+        height: 10vh;
+        
+    } 
+    
+}
+
+
+
+
+
+@media screen and (max-width:550px){
+    .ind-container{
+        height: 9vh;
+    }
+    .ind-container h1{
+        font-size:15px;
+    }
+    .ser{
+        width: 250px;
+        height: 30px;
+     
+        
+    }
+    .ser input{
+        width: 200px;
+        
+    }
+
+    
+    
 }

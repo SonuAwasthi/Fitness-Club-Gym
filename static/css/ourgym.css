@@ -41,12 +41,12 @@
 
 
 
-.cards{
-    width: 100vw;
+/* .our-cards{
+    width: 55vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
+} */
 
 
 
@@ -56,7 +56,7 @@ div.visit-text h1{
 }
 
 
-
+/* 
 
 
 
@@ -69,7 +69,7 @@ div.visit-text h1{
 .footer-container{
     display: flex;
     justify-content: space-evenly;
-    max-width:100%;
+    max-width:60%;
     margin: auto;
     margin-top: 40px;
 }
@@ -133,7 +133,7 @@ a.fa.fa-linkedin{
 }
 a.fa.fa-google{
     font-size: 28px;
-} 
+}  */
 
 
 
@@ -141,10 +141,10 @@ a.fa.fa-google{
     .fitness-logo img{
         width: 330px;
     }
-    .cards-content .imgs{
+    /* .cards-content .imgs{
         margin-left: 24px;
         margin-bottom: 15px;
-    }
+    } */
 
     
 
