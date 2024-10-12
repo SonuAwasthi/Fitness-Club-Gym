@@ -6,14 +6,15 @@
 <link rel="stylesheet" href="/static/css/signuppage.css">
 
 
-<div class="up-textt">
-    <h1> Sign UP<h1>
-</div>
+
 
 
 <div class="form-container">
     <form action="" method="post">  
         {% csrf_token %} 
+        <div class="form-logo">
+            <p>Sign Up</p>
+        </div>
         <div class="f-user">
             <label for="username">UserName</label>
             <input type="text" class="inputuser" name="username">
@@ -30,7 +31,7 @@
             <button class="botton" type="submit" >Submit</button>
 
             <div class="acc-creater">
-                <a href="/loginpage"><h4><u>Already have a account</u></h4></a>
+                <a href="/loginpage"><p>Already have an account?<span>Login</span></p></a>
             </div>
         </div>
     </form>

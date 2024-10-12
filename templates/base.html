@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Equipment/ {% block title %}{% endblock title %}</title>
+    <title>Fitness club/ {% block title %}{% endblock title %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -14,13 +14,14 @@
         <div class="hed-container">
             
             <div class="hed-content-one">
-                <h3>FITNESS</h3>
+                <p>𝑭𝒊𝒕𝒏𝒆𝒔𝒔<sub>𝒄𝒍𝒖𝒃</sub></p>
             </div>
 
             <div class="hed-content-two">
-                <a href="/" class="fluid-item">Home</a>
-                <a href="/ourgym" class="fluid-item">Our_Gym</a>
-                <a href="/membarpage" class="fluid-item">MemberShip</a>
+                <a href="/" class="fluid-item">𝑯𝒐𝒎𝒆</a>
+                <a href="/ourgym" class="fluid-item">𝑨𝒃𝒐𝒖𝒕</a>
+                <a href="/membarpage" class="fluid-item">𝑴𝒆𝒎𝒃𝒆𝒓𝑺𝒉𝒊𝒑</a>
+                <a href="/loginpage" class="fluid-item">𝑳𝒐𝒈𝒊𝒏</a>
             
             </div>
         </div>
@@ -35,9 +36,9 @@
     {% endfor %}
     {% endif %}
 
-{% block body %}
+    {% block body %}
 
-{% endblock body %}
+    {% endblock body %}
 
 
 

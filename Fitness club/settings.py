@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Gym_Equipment.urls'
+ROOT_URLCONF = 'Fitness club.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Gym_Equipment.wsgi.application'
+WSGI_APPLICATION = 'Fitness club.wsgi.application'
 
 
 # Database

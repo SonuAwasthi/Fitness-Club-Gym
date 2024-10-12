@@ -7,17 +7,12 @@
 <link rel="stylesheet" href="/static/css/loginus.css">
 
 
-
-<div class="first-content">
-    <h1>LOGIN</h1>
-</div>
-
-
-
-
 <div class="form-contain">
     <form action="" method="post">
         {% csrf_token %}
+        <div class="form-logo">
+            <p>LOGIN</p>
+        </div>
         <div class="lohgin">
             <label for="username">UserName</label>
             <input type="text" class="user-login" name="username">
@@ -26,7 +21,7 @@
             <input type="password" class="user-login" name="password">
 
             <button type="submit" class="submit-user">Submit</button>
-            <a href="/signpage"><h4><u>Create account</u></h4></a>
+            <a href="/signpage"><p>Don't have an account?<span>Sign Up</span></p></a>
         </div>
     </form>
     
