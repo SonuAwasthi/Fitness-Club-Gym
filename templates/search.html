@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}LOGIN{% endblock title %}
+
+
+{% block body %}
+<link rel="stylesheet" href="/static/css/indexp.css">
+
+
+<h1> search page</h1>
+<div class="cards-container" id="home">
+    <hr>
+    {% for phome in searchall %}
+    <div class="cards">
+        <img src='/media/{{phome.image}}'>
+        <div class="cards-con">
+            <p>{{phome.name}}</p>
+            <p>{{phome.price}}</p>
+            <a href="/quickview/{{phome.p_id}}"><button>Quick View</button></a> 
+        </div>
+    </div>
+   {% endfor %}
+</div>
+
+
+{% endblock body %}

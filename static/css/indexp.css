@@ -1,14 +1,15 @@
-
-.ind-fluid{
+.ind-fluid {
+    display: flex;
     width: 100%;
-    
+
 }
 
 
 
 
 
-.ser{
+.ser {
+    display: flex;
     margin: auto;
     margin-top: 15px;
     width: 65%;
@@ -21,8 +22,8 @@
     box-shadow: 0 2px 3px 2px black;
 }
 
-.ser input{
-    width:450px;
+.ser input {
+    width: 450px;
     border-radius: 25px;
     height: 100%;
     width: 95%;
@@ -30,19 +31,21 @@
     background: none;
     outline: none;
     padding-bottom: 4px;
-    
+
 
 }
 
-button{
-    position: absolute;
+.input-button button {
     border: none;
+}
+
+#prod-search {
+
+    border: none;
+    background: none;
     padding-right: 5px;
-    /* background: none;
-    border-radius: 50px;
-    border: none;
-    padding-bottom: 3px; */
-    
+
+
 }
 
 /* button.fa.fa-search{
@@ -51,14 +54,74 @@ button{
 
 
 
-
-
-
-
-
-.second-container{
+.second-contain {
     position: relative;
-    background-image: url("/static/img/wpp.jpg");
+    margin-top: 18px;
+    height: 85vh;
+    background-image: url("/static/img/gym-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.second-contain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.second-conte {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 30%;
+    line-height: 13px;
+
+
+
+}
+
+.second-conte h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+
+.second-conte pre {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.second-conte a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 40%;
+    
+
+}
+
+.second-conte a button {
+    padding: 5px 15px;
+}
+
+
+
+.second-container {
+    position: relative;
+    background-image: url("/static/img/frontii.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 15px;
@@ -75,20 +138,20 @@ button{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0, 0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.second-container h3{
+.second-container h3 {
     position: relative;
     z-index: 1;
     color: whitesmoke;
-    width:55%;
+    width: 55%;
     left: 25px;
     top: -15px;
     font-family: sans-serif;
 }
 
-.second-container button{
+.second-container button {
     position: relative;
     left: 2px;
     width: 17vw;
@@ -100,8 +163,8 @@ button{
 
 
 
-.heading{
-    display:flex;
+.heading {
+    display: flex;
     background-color: rgb(249, 13, 13);
     color: white;
     border: 2px solid black;
@@ -115,80 +178,92 @@ button{
     box-shadow: 0 4px 8px 0 green;
 }
 
-.heading-content{
+.heading-content {
     display: flex;
-   
+
 }
 
-.heading-content h1{
-    
+.heading-content h1 {
+
     font-weight: bold;
 }
 
+.section-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 35px;
+    justify-content: space-evenly;
+    grid-gap: 15px;
+
+
+
+}
+
+.section-item {
+    text-decoration: none;
+
+
+}
+
+.section-item p {
+    font-size: 25px;
+    color: black;
+    font-weight: 550;
+}
 
 
 
 
-.cards-container{
-    height: 500px;
+.cards-container {
+    height: 450px;
     width: 100%;
     overflow: auto;
     white-space: nowrap;
     overflow-y: hidden;
-    margin-top: 35px;
+    margin-top: 45px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.headingss{
-    display: flex;
-    color: black;
-    border-radius: 8px;
-}
-
-.headingss h2{
-    background-color: thistle;
-    border: 1px solid tan;
-
-}
 
 
 
 
-.cards{
+
+.cards {
     display: inline-block;
     overflow: hidden;
     height: 100%;
     margin-top: 22px;
     margin-right: 31px;
     margin-left: 12px;
-    
+
 }
 
 
 
-.cards img{
-    height: 50%;
+.cards img {
+    height: 55%;
     background-size: cover;
     width: 260px;
     cursor: pointer;
-    
+
 }
 
-.cards img:hover{
-    height: 52%;
-    width: 262px;
+.cards img:hover {
+    transform: scaley(1.1);
 }
 
-.cards-con{
+.cards-con {
     position: relative;
-    top: 3px;
+    top: 17px;
     left: 45px;
     font-size: 18px;
+    line-height: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.cards-con button{
+.cards-con button {
     border: 1 px solid black;
     background-color: black;
     color: white;
@@ -200,36 +275,126 @@ button{
 
 
 @media screen and (max-width:800px) {
-    .heading{
+
+    .second-conte {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 5;
+        top: 40%;
+        left: 25%;
+
+
+
+    }
+
+    .second-conte h1 {
+        
+        color: white;
+        font-size: 25px;
+        font-weight: 800;
+        text-transform: capitalize;
+
+    }
+
+    .second-conte pre {
+        color: white;
+        font-size: 8px;
+        font-weight: bold;
+        position: relative;
+
+     
+    }
+
+    .second-conte a {
+        color: white;
+        font-size: 8px;
+        font-weight: bold;
+        position: relative;
+        left: 20%;
+       
+
+    }
+
+    .second-contain {
+        position: relative;
+        margin-top: 15px;
+        height: 35vh;
+        background-image: url("/static/img/gym-wall.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .second-conte a button {
+        padding: 3px 10px;
+    }
+
+
+
+    .cards-container {
+        height: 300px;
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+        overflow-y: hidden;
+        margin-top: 45px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .heading {
         width: 80vw;
         height: 10vh;
-        
-    } 
-    
+
+    }
+
+    .section-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 25px;
+        justify-content: center;
+        grid-gap: 15px;
+        margin-left: 15px;
+
+
+
+    }
+
+    .section-item p {
+        font-size: 13px;
+        color: black;
+        font-weight: 550;
+    }
+
 }
 
 
 
 
 
-@media screen and (max-width:550px){
-    .ind-container{
+@media screen and (max-width:550px) {
+    .ind-container {
         height: 9vh;
     }
-    .ind-container h1{
-        font-size:15px;
-    }
-    .ser{
-        width: 250px;
-        height: 30px;
-     
-        
-    }
-    .ser input{
-        width: 200px;
-        
+
+    .ind-container h1 {
+        font-size: 15px;
     }
 
-    
-    
+    .ser {
+        width: 250px;
+        height: 30px;
+
+
+    }
+
+    .ser input {
+        width: 200px;
+
+    }
+
+
+
 }

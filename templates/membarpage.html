@@ -1,84 +1,150 @@
 
 {% extends "base.html" %}
 
-{% block title %}Membar{% endblock %}
+{% block title %}Membarship{% endblock %}
 
 {% block body %}
+<style>
+    
+    table,th, td {
+      caption-side: top;
+      margin: auto;
+      width: 63%;
+      font-size:larger;
+      margin-top: 10px;
+      margin-bottom: 7px;
+      border: 1px solid white;
+      border-collapse: collapse;
+      
 
+    }
+    caption{
+        color:black;
+        border: 1 px solid white;
+        background:linear-gradient(43deg,#4158D0,#C850C0,#FFCC70);
+        text-align:center
+        
+        
+       
+
+    }
+    table{
+        margin-bottom: 25px;
+    }
+
+</style>
 
 <link rel="stylesheet" href="/static/css/membar.css">
 
-<div class="intro">
+<!-- <div class="intro">
     <div class="fitness-club">
-        <img src="/static/img/fitness-logo.png">
+        <div class="fitnessclub-logo">
+            <img src="/static/img/fitness-logo.png">
+        </div>
     </div>
 </div>
-<hr>
+<hr> -->
 
-<div class="membership-text">
+
+<div class="packagedetail">
+    <div class="package-content">
+        <div class="logo">
+            <pre>𝑭𝒊𝒕𝒏𝒆𝒔𝒔 𝒄𝒍𝒖𝒃 𝑮𝒀𝑴</pre>
+        </div>
+        <table>
+            
+            <caption>Registration Fees- 1000/-</caption>
+            <tr>
+                <th>DURATION</th>
+                <th>FEES STRUCTURE</th>
+            </tr>
+            <tr>
+                <td>1 MONTH</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>3 MONTHS</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td>6 MONTHS</td>
+                <td>8500</td>
+            </tr>
+            <tr>
+                <td>12 MONTHS</td>
+                <td>17000</td>
+            </tr>
+        </table>
+
+        <p>Personal traning available in this pack</p>
+        <p style="text-decoration: underline;">Gym Timings</p>
+        <p>Morning & Evening - 6:00 am to 10:00 pm</p>
+        <p>Sunday Closed </p>
+
+    </div>
+</div>
+
+{% comment %} <div class="membership-text">
     <h4>A Gym Membership gives you access to a variety of top-quality exercise Equipment to enhance your Workout. You can use weight Machines, Dumbbells, Elliptical, and Stairmasters – all you require to kick start your fitness journey. you just have a Membership<br> <br>
     You can also get personal trainer .Personal training sessions are times set aside for clients to work with a personal trainer either one-on-one or in a small group. The trainer should know your fitness goals and needs and design a program during your sessions aimed at meeting those goals. The trainer will also: Explain and demonstrate the exercises. </h4>
-</div>
+</div> {% endcomment %}
 
 
-<div class="pack-estimate">
-    <div class="estimate-contant">
-        <img src="/static/img/Package-Front1.jpg">
-    </div>
-</div>
 
 
 
 
 <div class="membar-form">
-    <form action="/membarpage/" method="post" >
+   
+    <form action="" method="post" >
         {% csrf_token %}
+        <div class="pack">
+            <h3>Select Your Package</h3>
+        </div>
     
         <div class="form-container">
-            <h3>Select Your Package</h3>
+
+            
             <div class="form-content">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="fullname" >
+                <label for="username"> username</label>
+                <input type="text" id="username" name="username" required>
             </div>
 
             <div class="form-content">
                 <label for="num">Number</label>
-                <input type="Phone" id="num" name="number" >
+                <input type="Phone" id="num" name="number" required>
             </div>
 
 
             <div class="form-content">
                 <label for="gm">Gmail</label>
-                <input type="gmail" id="gm" name="gmail" >
+                <input type="gmail" id="gm" name="gmail" required>
             </div>
         
         
             <div class="form-content">
                 <label for="tim">Packages For :</label>
-                <select id="tim" name="packages">
-                    <option value="one_monthe">One Month</option>
-                    <option value="three_monthe">Three Monthe</option>
-                    <option value="six_monthe">Six Month</option>
-                    <option value="twelve_monthe">Twelve Month</option>
+                <select id="tim" name="packages" required>
+                    <option value="1">One Month</option>
+                    <option value="3">Three Monthe</option>
+                    <option value="6">Six Month</option>
+                    <option value="12">Twelve Month</option>
                 </select>
             </div>
 
         
             <div class="form-content-redio">
                 <input type="radio" id="one" name="gender" value="male">
-                <label for="one">Male</label>
+                <label for="male">Male</label>
                 <input type="radio" id="two-Month" name="gender" value="female">
-                <label for="two-Month">Female </label>
+                <label for="female">Female </label>
             </div>
-
-            
-                <button type="submit" class="botton">Submit </button>
-            
+            <button type="submit" class="botton">Submit </button>
         </div>
     
-    <div class="logg">
-        <a href="/loginpage" class="loggoutt"><strong>Logout<strong></a>
-    </div>
+    {% comment %} <div class="logg">
+        <a href="/logoutpage" class="loggoutt"><strong>Logout<strong></a>
+    </div> {% endcomment %}
     </form>
 </div>
 

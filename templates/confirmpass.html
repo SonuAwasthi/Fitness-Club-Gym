@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Confirm Password{% endblock title %}
+
+{% block body %}
+
+<link rel="stylesheet" href="/static/css/loginus.css">
+
+
+<div class="form-contain">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-logo">
+            <p>Confirm Password {{usern}}</p>
+        </div>
+        <div class="lohgin">
+            <label for="password">Password</label>
+            <input type="password" class="user-login" name="password">
+
+            <label for="password2">Confirm Password</label>
+            <input type="password" class="user-login" name="password2">
+
+            <label for="otp">OTP</label>
+            <input type="text" class="inputuser" name="otp">
+
+            <button type="submit" class="submit-user">Submit</button>
+            <a href="/loginpage"><p>login</p></a>
+        
+        </div>
+    </form>
+    
+</div>
+
+{% endblock body %}

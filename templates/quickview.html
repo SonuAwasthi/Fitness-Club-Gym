@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}LOGIN{% endblock title %}
+
+
+{% block body %}
+<link rel="stylesheet" href="/static/css/quickview.css">
+
+
+
+<div class="container">
+    <div class="con-content">
+        <div class="imagewrap">
+            <img src="/media/{{pd.image}}">
+        </div>
+        <div class="text-content">
+            <div class="text">
+                <h1> {{pd.name}}</h1>
+                <span> prize-₹{{pd.price}}</span>
+                <p> {{pd.desc}}</p>
+                <p id="free">Free delivery Till - {{now}}</p>
+                <button type="submit">buy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

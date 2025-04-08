@@ -1,43 +1,140 @@
-
-.thoughts{
-    display: flex;
-    margin-top:25px;
-    align-items: center;
-}
-
-.tho-content{
-    padding: 20px;
-    color:black;
-    width: 75%px;
-}
-.tho-content span{
-    font-size: 25px;
-    font-weight: 300;
-    font-family: sans-serif;
-    line-height: 40px;
-
-}
-
-.tho-content span h1{
-    color: rgb(110, 110, 181);
-    opacity: 0.7;
-    
+body{
+    background-color:gainsboro;
 }
 
 
 
-
-
-
-.f-club{
-    margin-top: 45px;
-    margin-bottom: 55px;
-}
-
-.fitness-logo{
+.about-head{
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    
+ 
+
 }
+
+.about-content{
+    width: 53%;
+    font-family: "Manrope", Sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 68.75px;
+    color: var(--e-global-color-e3ae94a);
+}
+
+
+.update-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    
+}
+.update-content pre{
+    font-size: 20px;
+    margin-right: 100px;
+    font-family: "Manrope", Sans-serif;
+}
+
+.cover-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  
+    
+    
+}
+.cover-content img{
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.defination{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    margin-top: -45px;
+
+
+
+}
+.deination-content{
+    margin: auto;
+    margin-top: 20px;
+    width: 65%;
+    font-size: 25px;
+    font-family: "Manrope", Sans-serif;
+    color:black;
+    text-align: justify;
+    line-height: initial;
+  
+}
+.morquee{
+    display: inline;
+    margin: auto;
+    width: 65%;
+    margin-bottom: 8px;
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.morquee span{
+    background-color: black;
+    border: 2px solid black;
+    padding: 8px;
+
+}
+
+.d-tag{
+    font-size: 22px;
+    font-family: "Manrope", Sans-serif;
+    color:rgb(95, 91, 91);
+    width: 900px;
+
+  
+
+}
+
+.Cardio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.cardio-tag{
+    font-size: 55px;
+    margin-bottom: 8px;
+    font-family: "Manrope", Sans-serif;
+    color: var(--e-global-color-e3ae94a);
+    font-weight: bold;
+}
+
+.cardio-img{
+    margin-bottom: 22px;
+    width: 300px;
+}
+
+.cardio-content{
+    font-size: 22px;
+    font-family: "Manrope", Sans-serif;
+    color:rgb(129, 125, 125);
+    width: 700px;
+  
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,11 +146,6 @@
 } */
 
 
-
-div.visit-text h1{
-    margin-left: 25px;
-    margin-top: 45px;
-}
 
 
 /* 
@@ -136,16 +228,9 @@ a.fa.fa-google{
 }  */
 
 
-
+/* 
 @media screen and (max-width:800px) {
-    .fitness-logo img{
-        width: 330px;
-    }
-    /* .cards-content .imgs{
-        margin-left: 24px;
-        margin-bottom: 15px;
-    } */
-
+    
     
 
-}
+} */

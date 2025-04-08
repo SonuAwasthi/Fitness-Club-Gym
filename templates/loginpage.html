@@ -15,13 +15,15 @@
         </div>
         <div class="lohgin">
             <label for="username">UserName</label>
-            <input type="text" class="user-login" name="username">
+            <input type="text" class="user-login" name="username" required>
 
             <label for="password">Password</label>
-            <input type="password" class="user-login" name="password">
-
+            <input type="password" class="user-login" name="password" required>
+            <div class="forgetp">
+                <a href="/forgetp"><p>Forget Password</p></a>
+            </div>
             <button type="submit" class="submit-user">Submit</button>
-            <a href="/signpage"><p>Don't have an account?<span>Sign Up</span></p></a>
+            <a href="/signpage" class="account"><p>Don't have an account? <u>Sign Up</u></p></a>
         </div>
     </form>
     

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}myplan{% endblock title %}
+
+{% block body %}
+<style>
+    body{
+        height: 100vh;
+    }
+    table,th,td{
+      caption-side: top;
+      margin: auto;
+      width: 63%;
+      font-size:larger;
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 7px;
+  
+      /* border-collapse:collapse; */
+      
+
+    }
+    caption{
+        color:aliceblue;
+        text-align: center;
+        font-size: xx-large;
+        border: 2px solid gray;
+        }
+</style>
+
+
+<link rel="stylesheet" href="/static/css/myplan.css">
+
+
+<div class="packagedetail">
+    <div class="package-content">
+        <div class="logo">
+            <pre>𝑭𝒊𝒕𝒏𝒆𝒔𝒔 𝒄𝒍𝒖𝒃 𝑮𝒀𝑴</pre>
+        </div>
+        <table>
+            
+            <caption>Your Details</caption>
+            <tr>
+                <td>Name</td>
+                <td>{{request.user}}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>{{bb.gender}}</td>
+            </tr>
+            <tr>
+                <td>Package</td>
+                <td>{{bb.packages}} Monthe</td>
+            </tr>
+        </table>
+        <p class="expiry">your package will expired on {{expiry}}</p>
+
+    </div>
+</div>
+{% endblock body %}

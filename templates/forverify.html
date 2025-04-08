@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}verify{% endblock title %}
+
+{% block body %}
+{% comment %} <title>|Login</title> {% endcomment %}
+<link rel="stylesheet" href="/static/css/loginus.css">
+
+
+<div class="form-contain">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-logo">
+            <p>{{usern}} Verify Your Account</p>
+        </div>
+        <div class="lohgin">
+            <label for="otp">OTP :</label>
+            <input type="text" class="user-login" name="otp">
+
+            <button type="submit" class="submit-user">Submit</button>
+            <a href="/signpage"><p>Don't have an account?<span>Sign Up</span></p></a>
+        </div>
+    </form>
+    
+</div>
+
+{% endblock body %}

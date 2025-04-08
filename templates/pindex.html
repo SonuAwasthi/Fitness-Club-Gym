@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}HOME{% endblock title %}
+
+{% block body %}
+<link rel="stylesheet" href="/static/css/indexp.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form class="ind-fluid" method="GET" action="/search">
+        <div class="ser">
+            <input type="text" placeholder="Search..." name="query" id="query">
+            <div class="input-button">
+                <button type="submit" style="background: none"><i style="background: none" id="prod-search" class="fa fa-search"aria-hidden="true" ></i></button>
+            </div>
+      </div>
+</form>
+
+
+<div class="second-contain">
+    <div class="second-conte">
+        <h1>fitnes club gym</h1>
+        <pre>Personal Training Courses at Fitness Club GYM</pre>
+        <a href="/membarpage"><button type="submit" class="btn btn-warning">Packages</button></a>
+    </div>
+</div>
+
+
+<!-- <div class="second-container">
+    <div class="col-md-6">
+        <h3> A good gym should have a variety of equipment, including cardio machines, 
+        weight training equipment, and free weights. Additionally,<br>
+        for being a member of our FITNESS CLUB gym you just have to 
+        select memberships through by our member page.
+        <br>
+        <br>
+    
+        <a href="/membarpage"><button type="submit">Packages</button></a>
+        </h3>
+    </div>
+</div> -->
+
+
+
+<div class="heading">
+    <div class="heading-content">
+        <h1>For Weekly Exercise</h1>
+    </div>
+</div>
+
+<div class="section-container">
+    <a href="#home" class="section-item"><p>HOME Exercise</p></a>
+    <a href="#chest" class="section-item"><p>Chest Exercise</p></a>
+    <a href="#bicep" class="section-item"><p>Bicep Exercise</p></a>
+    <a href="#shoulder" class="section-item"><p>Shoulder Exercise</p></a>
+    <a href="#lowerbody" class="section-item"><p>Lowerbody Exercise</p></a>
+</div>
+
+{% for i in ccc %}
+{{i}}
+{{i.1}}
+{% endfor %}
+
+<div class="cards-container" id="home">
+    
+    <hr>
+    {% for phome in home%}
+    <div class="cards">
+        <img src='/media/{{phome.image}}'>
+        <div class="cards-con">
+            <p>{{phome.name}}</p>
+            <p>{{phome.price}}</p>
+            <a href="/quickview/{{phome.p_id}}"><button>Quick View</button></a> 
+        </div>
+    </div>
+   {% endfor %}
+</div>
+
+
+<div class="cards-container" id="chest">
+    <hr>
+    {% for pchest in chest%}
+    <div class="cards">
+        <img src="/media/{{pchest.image}}">
+        <div class="cards-con">
+            <p>{{pchest.name}}</p>
+            <p>{{pchest.price}}</p>
+            <a href="quickview/{{pchest.p_id}}"><button>Quick View</button></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="cards-container" id="bicep">
+    <hr>
+    {% for pbicep in bicep %}
+    <div class="cards">
+        <img src="/media/{{pbicep.image}}">
+        <div class="cards-con">
+            <p>{{pbicep.name}}</p>
+            <p>Rs: {{pbicep.price}}</p>
+            <a href="quickview/{{pbicep.p_id}}"><button>Quick View</button></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<div class="cards-container" id="shoulder">
+    <hr>
+    {% for pshoulder in shoulder %}
+    <div class="cards">
+        <img src="/media/{{pshoulder.image}}">
+        <div class="cards-con">
+            <p>{{pshoulder.name}}</p>
+            <p>Rs: {{pshoulder.price}}</p>
+            <a href="quickview/{{pshoulder.p_id}}"><button>Quick View</button></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+<div class="cards-container" id="lowerbody">
+    <hr>
+    {% for plowerbody  in lowerbody %}
+    <div class="cards">
+        <img src="/media/{{plowerbody.image}}">
+        <div class="cards-con">
+            <p>{{plowerbody.name}}</p>
+            <p>Rs: {{plowerbody.price}}</p>
+            <a href="quickview/{{plowerbody.p_id}}"><button>Quick View</button></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+{% endblock body %}
