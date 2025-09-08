@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login,logout
-from Gymapp.models import Membars,Product,userverify,gymplan
+from Gymapp.models import Product,userverify
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from datetime import datetime,timedelta
@@ -12,45 +12,12 @@ import random
 
 @login_required(login_url="loginpage")
 def membarpage(request):
-    if request.method=="POST":
-        pusername=request.POST.get("username")
-        number=request.POST.get("number")
-        gmail=request.POST.get("gmail")
-        packages=request.POST.get("packages")
-        gender=request.POST.get("gender")
-        mainuser=User.objects.get(username=pusername)
-        
-        # if not gymplan.objects.filter(userplan=mainuser).exists():
-        #     messages.success(request, "ee na chalbe")
-        #     return redirect("membarpage")
-        if gymplan.objects.filter(userplan=mainuser).exists():
-            messages.success(request, "duplicate not allowed ")
-            return redirect("membarpage")
-        
-        muser=gymplan.objects.create(userplan=mainuser,number=number,gmail=gmail,packages=packages,gender=gender)
-
-        if muser:
-            muser.save()
-            messages.success(request, "Congratulation to Being Fitness Club Membar ")
-            return redirect("/", pusername=pusername)
+   
     return render(request,"membarpage.html")
 
 
 def myplan(request):
-    usernam=User.objects.get(username=request.user)
-    bb=gymplan.objects.filter(userplan=usernam).values()
-    now=[]
-    after=[]
-    if not bb:
-        return render(request,"notmyplan.html")
-    else:
-        for i in bb:
-            after=int(i['packages'])
-        for iy in bb:
-            now=iy['datetime']
-        expiry=now+timedelta(days=after*30)
-        return render(request,"myplan.html",{"bb":bb[0],"expiry":expiry})
-    # tom=now+relativedelta(month=after)
+   
     return render(request,"myplan.html")
 
 def notmyplan(request):
